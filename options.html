@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="options.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <nav class="navbar sticky-top" style="background: #000; height: 60px;">
+            <div class="container">
+                <div class="row w-100">
+                    <div class="col-6 offset-3">
+                        <h3 class="text-white font-weight-bolder mb-0 d-flex align-items-center"><img src="logo.svg" class="mr-3" width="53">PVU-Bot</h3>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container">
+
+                <div class="row mt-3">
+                    <div class="col-6 offset-3 pt-4">
+                                                    
+                        <form id="settings">
+                            <fieldset class="mb-2">
+                                <legend >Первый запуск / First start</legend>    
+                                <div class="form-group text-left">
+                                    <p class="mb-2 d-block">Ключ доступа / Key access:</p>
+                                    <input class="form-control" name="token" type="text" value="">
+                                    <a href="https://t.me/pvu_chrome_bot" class="small">Купить ключ / Bye key</a>
+                                </div>
+                            </fieldset>
+                            <div class="form-group">
+                                <button type="button" id="submit-setting" class="btn btn-md btn-success" >Сохранить / Save</button>
+                                <span class="small text-white ml-2 d-none settings-status">Сохранено / Success</span>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-6 offset-3 pt-4">
+
+                        <form id="options">
+                            <fieldset class="mb-4">
+                                <legend >Настройки / Settings</legend>    
+                                <div class="form-group text-left">
+                                    <p class="mb-2 d-block">Название фермы / Farm Header:</p>
+                                    <input class="form-control" name="header" type="text" value="">
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" name="bell_farming" id="ch1" />
+                                    <label class="form-check-label ml-2" for="ch1">Оповещать о возможности фармить / Notify farm</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" name="bell_crow" id="ch2" />
+                                    <label class="form-check-label ml-2" for="ch2">Оповещать о сидячей вороне / Notify Crow</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" name="bell_polive" id="ch3" />
+                                    <label class="form-check-label ml-2" for="ch3">Оповещать о поливе / Notify water</label>
+                                </div>
+                                <div class="form-check mb-2 d-none">
+                                    <input class="form-check-input" type="checkbox" name="fun_autopolive" id="ch4" />
+                                    <label class="form-check-label ml-2" for="ch4">Автоматический полив</label>
+                                </div>
+                                <div class="form-check mb-2 d-none">
+                                    <input class="form-check-input" type="checkbox" name="fun_crowpinok" id="ch5" />
+                                    <label class="form-check-label ml-2" for="ch5">Авто-шугатель вороны</label>
+                                </div>
+                            </fieldset>
+                            <div class="form-group">
+                                <button type="button" id="submit-options" class="btn btn-md btn-success" >Сохранить / Save</button>
+                                <span class="small text-white ml-2 d-none options-status">Сохранено / Success</span>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                
+        <script src="jquery.min.js"></script>
+        <script src="options.js"></script>
+        
+    </body>
+</html>
