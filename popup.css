@@ -9,30 +9,34 @@ html,body {
 }
 
 .plugin-menu {
-    height: 120px;
     width: 200px;
     margin: 0px;
     display: flex;
-    background: url(crow-bede.png) no-repeat center center;
+    background: url(crow-bede.png) no-repeat center top;
     background-size: 80%;
 }
 
 .nav-block {
     width: 100%;
     margin-top: 125px;
+    padding-bottom: 15px;
 }
 
 .nav-block button, .nav-block a {
-    background: transparent !important;
-    border: none !important;
-    padding: 6px 5px;
-    display: block;
-    width: 100%;
+    background-color: #fdc25b;  
+    border:2px solid #fdc25b !important;
+    border-radius: 6px;
+    color: #212529;
+    padding: 6px 5px; 
+    width: 90%;
+    margin-left:5%;
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .nav-block button:hover, .nav-block a:hover {
     cursor: pointer;
-    background: #924db5 !important;
-    color: #fff;
+    color: #212529;
+    background-color: #ffce81;
+    border-color: #ffce81;
 }
